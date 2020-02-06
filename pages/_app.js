@@ -44,5 +44,4 @@ class MovieApp extends App {
 }
 
 
-
 export default MovieApp
