@@ -31,7 +31,7 @@ const MovieCreateForm = (props) => {
         <form>
             
         <div className="form-group">
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input 
                 onChange={handleChange}
                 value={form.name}
@@ -43,7 +43,7 @@ const MovieCreateForm = (props) => {
                 placeholder="Lord of the Rings" />
         </div>
         <div className="form-group">
-            <label for="description">Description</label>
+            <label htmlFor="description">Description</label>
             <input 
                 onChange={handleChange}
                 value={form.description}
@@ -54,7 +54,7 @@ const MovieCreateForm = (props) => {
                 placeholder="Somewhere in Middle-earth..." />
         </div>
         <div className="form-group">
-            <label for="description">Rating</label>
+            <label htmlFor="description">Rating</label>
             <input
                 onChange={handleChange}
                 value={form.rating} 
@@ -67,7 +67,7 @@ const MovieCreateForm = (props) => {
             <small id="emailHelp" className="form-text text-muted">Max: 5, Min: 0 </small>
         </div>
         <div className="form-group">
-            <label for="image">Image</label>
+            <label htmlFor="image">Image</label>
             <input 
                 onChange={handleChange}
                 value={form.image}
@@ -78,7 +78,7 @@ const MovieCreateForm = (props) => {
                 placeholder="http://....." />
         </div>
         <div className="form-group">
-            <label for="cover">Cover</label>
+            <label htmlFor="cover">Cover</label>
             <input 
                 onChange={handleChange}
                 value={form.cover}
@@ -89,7 +89,7 @@ const MovieCreateForm = (props) => {
                 placeholder="http://......" />
         </div>
         <div className="form-group">
-            <label for="longDesc">Long Description</label>
+            <label htmlFor="longDesc">Long Description</label>
             <textarea 
                 onChange={handleChange} 
                 value={form.longDesc}
@@ -99,7 +99,7 @@ const MovieCreateForm = (props) => {
                 rows="3"></textarea>
         </div>
         <div className="form-group">
-            <label for="genre">Genre</label>
+            <label htmlFor="genre">Genre</label>
             <select multiple className="form-control" id="genre">
             <option>drama</option>
             <option>music</option>

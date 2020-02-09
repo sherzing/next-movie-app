@@ -4,17 +4,20 @@ import { createMovie } from '../actions/index'
 
 const SideMenu = props => {
     console.log(props)
+    let modal = null
     // containment
 
     const handleCreateMovie = (movie) => {
         createMovie(movie).then((movies) => {
             console.log(JSON.stringify(movies))
+            // closes the model with the create form
+            modal.closeModal()
         })
     }
 
     return (
         <div>
-            <Modal hasSubmit={false}>
+            <Modal ref={elem => modal = elem} hasSubmit={false}>
                 <MovieCreateForm handleFormSubmit={handleCreateMovie} />
             </Modal>
             <h1 className="my-4">{props.appName}</h1>
