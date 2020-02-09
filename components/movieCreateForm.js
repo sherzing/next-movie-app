@@ -4,9 +4,13 @@ import { loadGetInitialProps } from 'next/dist/next-server/lib/utils'
 const MovieCreateForm = (props) => {
 
     const [form, setForm] = useState({
-        name: 'Some Movie',
-        description: 'Some Description'
-
+        name: '',
+        description: '',
+        rating: '',
+        description: '',
+        image: '',
+        cover: '',
+        longDesc: ''
     })
 
     const handleChange = (event) => {
