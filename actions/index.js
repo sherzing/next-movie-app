@@ -28,12 +28,19 @@ const MOVIE_DATA = [
     }
   ]
 
-  export const getMovies = () => {
-    return new Promise((resolve, reject) => {
-        resolve(MOVIE_DATA)
-    })
 
-    
+export const getMovies = () => {
+  return new Promise((resolve, reject) => {
+      resolve(MOVIE_DATA)
+  })
+}
 
-   
-  }
+
+export const createMovie = (movie) => {
+  return new Promise((resolve, reject) => {
+      MOVIE_DATA.push(movie)
+      resolve(MOVIE_DATA)
+  })
+}
+
+  
